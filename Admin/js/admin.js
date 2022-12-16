@@ -82,7 +82,7 @@ setDarkChart = (dark) => {
   customer_chart.updateOptions(theme);
   category_chart.updateOptions(theme);
 };
-//DRaw bar chart
+//Draw bar chart
 let customer_options1 = {
   series: [
     {
@@ -118,6 +118,16 @@ let customer_chart1 = new ApexCharts(
   customer_options1
 );
 customer_chart1.render();
+etDarkChart = (dark) => {
+  let theme = {
+    theme: {
+      mode: dark ? "dark" : "light",
+    },
+  };
+
+  customer_chart1.updateOptions(theme);
+  customer_options1.updateOptions(theme);
+};
 
 
 
